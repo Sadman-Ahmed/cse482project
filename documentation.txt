@@ -1,0 +1,50 @@
+
+Login: 
+	//Username-email
+	//password
+
+Registration: 
+	//--for tutor 
+	//first name	//last name
+	//username
+	//email
+	//password
+	//confirm password
+	//contact number
+	//date of birth
+	//terms and conditions
+
+	//--for gaurdian
+	//first name	//last name 
+	//username
+	//email
+	//password
+	//confirm password
+	//address
+	//contact number 
+	//terms and conditions
+
+Profile:
+	//--for tutor
+	//picture upload
+	//educational details 
+	//address
+	//experience 
+	//subject want to teach
+	//classes want to teach 
+	//gender
+	//NID number 
+	//NID verification
+	//father's name	  //mother's name 
+	//religion
+
+	//--for gaurdian
+	//picture upload
+	//NID number 
+	//NID verification
+	//children number 
+	//children details 
+	//religion
+	//occupation
+	
+	/////////password encryption////////
