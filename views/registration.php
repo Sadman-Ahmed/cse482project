@@ -67,8 +67,12 @@
         <div class="input-holder">
           <input class="input" name="dob" type="date" placeholder="Birth Day " value="" min="1900-01-01" max="2200-12-30">
         </div>
-        <div class="input-holder"><input class="terms" type="checkbox" >I have read and agree to the Terms and Conditions and Privacy Policy  </div>
-        <div class="input-holder"><input class="button" type="submit" value="Sign In"></div>
+        <div class="input-holder">
+          <input class="terms" type="checkbox" >I have read and agree to the Terms and Conditions and Privacy Policy
+         </div>
+        <div class="input-holder">
+          <input class="button" type="submit" value="Sign In">
+        </div>
     </form>
     <!-- registration form end -->
   </body>

@@ -7,3 +7,5 @@ initial commit:
 v1.0: 
 	//registration connected with the database
 
+v1.1: 
+	//role-based login completed
