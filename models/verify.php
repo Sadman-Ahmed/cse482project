@@ -32,6 +32,7 @@
           $Demail     = $row['email'];
           $Dpassword = $row['password'];
           $Drole = $row['role'];
+          $_SESSION["id"] = $row['id'];
           //matching info
           if(($email == $Demail) && ($password == $Dpassword)){
             //selecting role
@@ -48,7 +49,6 @@
           else{
               header('location: ../views/login.php?error=invalid_user');
               echo "string1";
-
           }
         }
       }

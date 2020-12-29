@@ -9,3 +9,7 @@ v1.0:
 
 v1.1: 
 	//role-based login completed
+
+v1.2:
+	//system identifies which particular user is logged in
+	//logout is implimented 
