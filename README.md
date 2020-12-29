@@ -1,6 +1,7 @@
 # cse482project
 Online Private Tutors Finding System 
 
+<<<<<<< HEAD
 initial commit:
 	//login & registration done with basic css (css not final) - Ahnaf 
 	
@@ -13,3 +14,8 @@ v1.1:
 v1.2:
 	//system identifies which particular user is logged in
 	//logout is implimented 
+
+v2.0
+	//tutor request primary done
+	//guardian profile done (Primary) 
+
