@@ -28,14 +28,31 @@
         </div>
         <div class="input-holder">
         <input class="input" type="tel" placeholder="Student Age">
-        </div><br>
+      </div><br>
 
-        <select class="input">
-        <option class="input-option" > Category</option>
-        <option class="input-option" >English Medium</option>
-        <option class="input-option" >Bangla Medium</option>
-        <option class="input-option" >English Version</option>
+
+        <div class="">
+          <select class="input" id="dr1" onchange = "insertOptions('dr1','dr2')">
+          <option class="input-option" name ="catagory" value="catagory"> Category</option>
+          <option class="input-option" name="englishMedium" value="englishMedium" >English Medium</option>
+          <option class="input-option" name="banglaMedium" value="banglaMedium" >Bangla Medium</option>
+          <option class="input-option" name="englishVersion" value="englishVersion">English Version</option>
+        </select>
+
+        </div>
+
+        <div class="input-holder">
+          <select class="input"  id="dr2" onchange="insertSubjects('dr2','dr3')">
+            <option name="class_no" value="class_no">Class</option>
+          </select>
+        </div>
+
+      <div class="input-holder">
+        <select class="input" id="dr3">
+        <option class="input-option" name="subject" value="subject"  > Choose Subject</option>
       </select>
+      </div>
+
 
         <div class="input-holder">
         <input class="input" type="tel" placeholder="Class">
@@ -82,6 +99,6 @@
     </form>
 
     <!-- Input Group ends -->
-
+    <script src="../assets/js/posted.js" charset="utf-8"></script>
   </body>
 </html>
