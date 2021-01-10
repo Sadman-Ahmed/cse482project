@@ -1,6 +1,8 @@
 <?php
   // connecting to the database
   include_once("../models/database.php");
+  include_once("../models/error.php");
+
 
   //session start
   session_start();
@@ -8,14 +10,16 @@
   //getting the data
   if(isset($_POST['submit'])){
     $email = $_POST['email'];
-    $password = $_POST['password'];
+    $password = md5($_POST['password']);
 
     //getting user info from database
     $query = "SELECT * FROM users WHERE email = '$email'";
     $result = mysqli_query($conn, $query);
 
+    $rowcount=mysqli_num_rows($result);
+    printf("Result set has %d rows.\n",$rowcount);
     //checking if user is valid or not
-    if ($result == NULL) {
+    if ($rowcount == 0) {
     header('location: ../views/login.php?error=invalid_user');
     echo "string1";
     }

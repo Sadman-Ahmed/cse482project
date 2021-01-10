@@ -1,13 +1,15 @@
 <?php
     // connecting to the database
   include_once("../models/database.php");
+  include_once("../models/error.php");
+
 
     //getting the data
   $firstname = $_POST['firstname'];
   $lastname = $_POST['lastname'];
   $username = $_POST['username'];
   $email = $_POST['email'];
-  $password = $_POST['password'];
+  $password = md5($_POST['password']);
   $role = $_POST['role'];
   $address = $_POST['address'];
   $contact = $_POST['contact'];

@@ -34,14 +34,14 @@ Profile:
 	//classes want to teach 
 	//gender
 	//NID number 
-	//NID verification
+	--//NID verification
 	//father's name	  //mother's name 
 	//religion
 
 	//--for gaurdian
 	//picture upload
 	//NID number 
-	//NID verification
+	--//NID verification
 	//children number 
 	//children details 
 	//religion
