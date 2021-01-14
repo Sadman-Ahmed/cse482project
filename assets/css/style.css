@@ -1,60 +1,56 @@
-body{
-    margin: 0;
-    background-image: url(../img/bg.jpg);
-    /* background-color: blue; */
-    position:relative;
-    font-family: 'Scheherazade', serif;
-    font-size: 100%;
-    text-align: center;
+@font-face {
+  font-family: 'Lobster', cursive;
 }
-.menu{
-  height: 80px;
-margin-left: 450px;
-margin-top: 80px;
+
+@font-face {
+  font-family: 'Josefin Slab', serif;
 }
-.menu ul {margin:0;padding:0;list-style:none;
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #eeeeee;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #393e46;
+}
+
+.topnav a {
+  /* float: left; */
+  color: #f2f2f2;
+  text-align: center;
+  padding: 18px 18px;
+  text-decoration: none;
+  /* font-size: px; */
+}
+
+.nav:hover {
+  background-color: #ffd369;
+  color: black;
+}
+.nav{
+  float: right;
+  font-size: 20px;
+  font-family: Lobster;
+}
+
+.tutorhub{
+  font-family: Josefin Slab;
+  float: left; !important
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 26px;
 
 }
 
-.menu ul li {
-  display: inline;
-   }
-/* .menu ul li:last-child{border-right: 0px solid #CC0000;} */
 
-/* .menu ul li:first-child{border-left: 0px solid #FF3333;} */
-
-.menu ul li a{
-  display: inline-block;
-font-size: 16px;
-color: #fff;
-margin-left: 45px;
-font-weight: 600;
-padding: 20px 0 5px;
-text-decoration: none;
-}
-.menu ul li a:hover,#active{color:red;}
-.menu-li{
-
-}
-.menu-btn {
-  display: inline-block;
-    min-width: 100px;
-    text-align: center;
-    border: none;
-    padding: 15px 10px;
-    font-weight: 600;
-    font-size: 16px;
-    position: relative;
-    color: #fff;
-    cursor: pointer;
-    background: #d82a4e;
-      padding-top: 10px;
-      padding-bottom: 10px;
-}
 h1{
-  font-size: 55px;
-   align="center" ;
-   color: #fff;
+  font-family: Lobster;
+  color: #39311d;
 }
 p{
   ont-size: 14.1px;
@@ -71,18 +67,95 @@ p{
 
 }
 
-.bg-image
-{
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    opacity: 0.3;
-    /* background-image: url('https://images.pexels.com/photos/32237/pexels-photo.jpg?dl&fit=crop&w=1920&h=994'); */
-    background-size: cover;
-    background-position: center;
+input[type=text], input[type=password], input[type=number], input[type=email],input[type=tel] ,input[type=date],  textarea {
+  /* width: 100%;
+  padding: 20px 70px; */
+  /* margin: 15px 0 22px 0; */
+  height: 60px;
+  width: 500px;
+  display: inline-block;
+  border: none;
+  background: #ddd;
+  border-radius: 4px;
+  font-family: lato;
+  color: #393e46;
+  font-size: 18px;
+  padding-left: 2%;
 }
+
+input[type=text]:focus, input[type=password]:focus, input[type=number]:focus, input[type=email]:focus,input[type=tel]:focus,input[type=date]:focus, textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.input-left input{
+float: left;
+width: 350px;
+margin-left: 350px;
+margin-bottom: 50px;
+}
+.input-right input{
+float: right;
+width: 350px;
+margin-right: 350px;
+margin-bottom: 50px;
+}
+
+.input input{
+  width:790px;
+  margin-left: 350px;
+  margin-bottom: 50px;
+}
+.input select{
+  margin-left: 350px;
+  margin-bottom: 50px;
+  width:820px;
+}
+.input-left select{
+float: left;
+width: 380px;
+margin-left: 350px;
+margin-bottom: 50px;
+margin-right: 0;
+}
+.input-right select{
+float: right;
+width: 380px;
+margin-right: 350px;
+margin-bottom: 50px;
+margin-left: 0;
+}
+.input-right-days select{
+float: right;
+width: 380px;
+margin-right: 350px;
+margin-bottom: 50px;
+margin-top: -18px;
+}
+
+::placeholder{
+  color: #393e46;
+  opacity: .5;
+  /* padding-left: 5%; */
+}
+
+select {
+  /* width: 100%;
+  padding: 20px 70px; */
+  /* margin: 15px 0 22px 0; */
+  height: 60px;
+  width: 530px;
+  display: inline-block;
+  border: none;
+  background: #ddd;
+  border-radius: 4px;
+  font-family: lato;
+  color: #000000;
+  font-size: 18px;
+  margin-bottom: 10px;
+  padding-left: 1.5%;
+}
+
 .icon
 {
     color: #ffffffc4;
@@ -91,23 +164,7 @@ p{
 {
     padding-top: 30px;
 }
-.input
-{
-    caret-color: #fffffff0;
-    color: #fffffff0;
-    border: none;
-    background: transparent;
-    outline: none;
-    border-bottom: 0.5px solid #fffffff0;
-    margin-left: 12px;
-    width: 30%;
-   padding-bottom: 10px;
-}
-.input-option{
 
-  background:#34495E ;
-
-}
 .terms{
   font-color:white;
 }
@@ -121,25 +178,35 @@ p{
 }
 .button
 {
-  float: right;
-    margin-right: 520px;
-    padding: 8px 30px;
-    background: #d82a4e;
-    outline: none;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    cursor: pointer;
+  width: 100%;
+  /* padding: 20px 70px; */
+  height: 60px;
+  width: 500px;
+  border:none;
+  background-color: #393e46;
+  color: #f2f2f2;
+font-size: 25px;
+text-align: center;
+font-family: Lobster;
+border-radius: 5px;
 }
 .button:hover
 {
-    background: #2c49ee;
+  background-color: #222831;
+  color: #f2f2f2;
+}
+
+.button:focus{
+  background-color: #393e46;
+  color: #f2f2f2;
 }
 .link
 {
-  color: #ffffffb2;
-    margin-left: 265px;
-}
+  float: left;
+  color: #222831;
+  margin-left: 520px;
+  margin-top: 25px;
+
 }
 .link:hover
 {
@@ -147,12 +214,28 @@ p{
     text-decoration: none;
 }
 
+.login-button{
+  float: right;
+  width: 100%;
+/* padding: 20px 70px; */
+height: 60px;
+width: 220px;
+border: none;
+background-color: #393e46;
+color: #f2f2f2;
+font-size: 25px;
+text-align: center;
+font-family: Lobster;
+border-radius: 5px;
+margin-right: 490px;
+}
+
 
 /* Guardian-profile */
 
 .profile-pic{
     float: left;
-    margin: 30px 100px 30px 100px;
+    margin: 100px 100px 50px 150px;
 }
 input.hidden {
     position: absolute;
@@ -172,15 +255,15 @@ input.hidden {
     padding-top: 30px;
 
   }
-  .input2
-  {
-      caret-color: #fffffff0;
-      color: #fffffff0;
-      border: none;
-      background: transparent;
-      outline: none;
-      border-bottom: 0.5px solid #fffffff0;
-      margin-left: -250px;
-      width: 30%;
-     padding-bottom: 10px;
+
+  .profile-input{
+    float: right;
+    margin-top: 20px;
+    margin-right: 300px;
   }
+
+
+  /* post add starts */
+.input-option{
+  opacity: 0.5;
+}

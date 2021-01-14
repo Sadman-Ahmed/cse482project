@@ -8,17 +8,16 @@
   <body>
 
 
- <!-- Nevigation Bar Starts -->
- <div class="menu">
-    <ul>
-	  <li><a href="#">Home</a></li>
-	  <li><a href="#">About Us</a></li>
-    <li><a href="#">Tutors</a></li>
-	  <li><a href="map.html">Contact</a></li>
-    <li class="menu-li"><a class="menu-btn" href="#">Sign Up</a></li>
-	 </ul>
- </div>
- <!-- Nevigation Bar Ends -->
+    <!-- navbar start-->
+    <div class="topnav">
+      <a class="tutorhub" href="#">Tutorhub.com</a>
+      <a class="nav"href="#news">News</a>
+      <a class="nav"href="#contact">Contact</a>
+      <a class="nav"href="#about">About</a>
+      <a class="nav"href="#home">Home</a>
+    </div>
+
+    <br><br><br>
 
              <!-- Profile Picture starts -->
                 <div class="profile-pic">
@@ -34,12 +33,13 @@
              <!-- Profile Picture ends -->
 
              <!-- Input Group starts -->
-             <div class="input-holder2"><input class="input2" type="tel" placeholder="NID Number"></div>
-             <div class="input-holder2"><input class="input2" type="tel" placeholder="Children Number"></div>
-             <div class="input-holder2"><input class="input2" type="text" placeholder="Children Details"></div>
-             <div class="input-holder2"><input class="input2" type="text" placeholder="Religion"></div>
-             <div class="input-holder2"><input class="input2" type="text" placeholder="Occupation"></div>
-
+             <div class="profile-input">
+             <div class="input-holder2"><input  type="tel" placeholder="NID Number"></div>
+             <div class="input-holder2"><input type="tel" placeholder="Children Number"></div>
+             <div class="input-holder2"><input  type="text" placeholder="Children Details"></div>
+             <div class="input-holder2"><input  type="text" placeholder="Religion"></div>
+             <div class="input-holder2"><input  type="text" placeholder="Occupation"></div>
+             </div>
              <!-- Input Group ends -->
 </body>
 </html>

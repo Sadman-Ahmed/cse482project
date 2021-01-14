@@ -20,3 +20,7 @@ v2.1:
 	//Dynamic dropdown menu - shourav
 	//password encryption done - sadman
 	//minor bug fixed - sadman
+
+v2.2:
+     	//CSS Refine - Ahnaf
+	//front-end bug fixed - Ahnaf

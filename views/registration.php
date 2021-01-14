@@ -4,19 +4,21 @@
     <meta charset="utf-8">
     <title>Registration Page</title>
         <link rel="stylesheet" href="../assets/css/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@1,600&display=swap" rel="stylesheet">
   </head>
   <body>
 
     <!-- navbar start-->
-    <div class="menu">
-       <ul>
-       <li><a href="#">Home</a></li>
-       <li><a href="#">About Us</a></li>
-       <li><a href="#">Tutors</a></li>
-       <li><a href="map.html">Contact</a></li>
-       <li class="menu-li"><a class="menu-btn" href="#">Sign Up</a></li>
-     </ul>
-   </div>
+    <div class="topnav">
+      <a class="tutorhub" href="#">Tutorhub.com</a>
+      <a class="nav"href="#news">News</a>
+      <a class="nav"href="#contact">Contact</a>
+      <a class="nav"href="#about">About</a>
+      <a class="nav"href="#home">Home</a>
+    </div>
+
+    <br><br><br>
    <!-- navbar end -->
    <!-- notify the user about successfull registration -->
    <div>
@@ -33,46 +35,47 @@
 
     <!-- registration form start -->
     <form action="../models/register.php" method="POST">
-        <div class="input-holder">
-          <input class="input" name="firstname" type="text" placeholder="First Name">
+        <div align="center" class="input-holder">
+          <input name="firstname" type="text" placeholder="First Name">
         </div>
-        <div class="input-holder">
-          <input class="input" type="text" name="lastname" placeholder="Last Name">
+        <div align="center" class="input-holder">
+          <input type="text" name="lastname" placeholder="Last Name">
         </div>
-        <div class="input-holder">
-          <input class="input" type="text" name="username" placeholder="Username">
+        <div align="center" class="input-holder">
+          <input type="text" name="username" placeholder="Username">
         </div>
-        <div class="input-holder">
-          <input class="input" name="email" type="email" placeholder="Email">
+        <div align="center" class="input-holder">
+          <input name="email" type="email" placeholder="Email">
         </div>
-        <div class="input-holder">
-          <input class="input" name="password" type="password" placeholder="Password">
+        <div align="center" class="input-holder">
+          <input name="password" type="password" placeholder="Password">
         </div>
-        <div class="input-holder">
-          <input class="input" name="conpassword" type="password" placeholder="Confirm Password">
+        <div align="center" class="input-holder">
+          <input name="conpassword" type="password" placeholder="Confirm Password">
         </div>
-        <div class="input-holder">
-          <select class="input" name="role">
-            <option class="input-option" > Are You a Guardian or Tutor</option>
-            <option class="input-option" value="guardian">Guardian</option>
-            <option class="input-option" value="tutor">Tutor</option>
+        <div align="center" class="input-holder">
+          <select name="role">
+            <option> Are You a Guardian or Tutor</option>
+            <option value="guardian">Guardian</option>
+            <option value="tutor">Tutor</option>
           </select>
         </div>
-        <div class="input-holder">
-          <input class="input" name="address" type="text" placeholder="Parmanent Address">
+        <div align="center" class="input-holder">
+          <input name="address" type="text" placeholder="Parmanent Address">
         </div>
-        <div class="input-holder">
-          <input class="input" name="contact"type="tel" placeholder="Conatact Number">
+        <div align="center" class="input-holder">
+          <input name="contact"type="tel" placeholder="Conatact Number">
         </div>
-        <div class="input-holder">
-          <input class="input" name="dob" type="date" placeholder="Birth Day " value="" min="1900-01-01" max="2200-12-30">
+        <div align="center"class="input-holder">
+          <input name="dob" type="date" placeholder="Birth Day " value="" min="1900-01-01" max="2200-12-30">
         </div>
-        <div class="input-holder">
+        <div align="center" class="input-holder">
           <input class="terms" type="checkbox" >I have read and agree to the Terms and Conditions and Privacy Policy
          </div>
-        <div class="input-holder">
-          <input class="button" type="submit" value="Sign In">
+        <div align="center" class="input-holder">
+          <input class="button" type="submit" value="Sign Up">
         </div>
+        <br><br>
     </form>
     <!-- registration form end -->
   </body>
