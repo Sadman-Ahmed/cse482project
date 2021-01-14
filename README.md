@@ -24,3 +24,6 @@ v2.1:
 v2.2:
      	//CSS Refine - Ahnaf
 	//front-end bug fixed - Ahnaf
+
+v2.2.1:
+	//minor bug fixed

@@ -263,7 +263,9 @@ input.hidden {
   }
 
 
-  /* post add starts */
-.input-option{
-  opacity: 0.5;
-}
+        /* job offer */
+
+.job{
+    width:100%;
+    background-color: #ddd;
+        }
