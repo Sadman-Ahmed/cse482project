@@ -2,8 +2,8 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Job Offers</title>
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <title></title>
+    <link rel="stylesheet" href="../assets/css/style.css"></title>
 
   </head>
   <body>
@@ -23,7 +23,7 @@
 
 
       <h1 align = "center">Offering Job </h1>
-      <table align = "center" class="job" >
+      <table align = "center" class="job" onclick="btn_click()" >
       <thead >
           <tr >
               <th >Student Name</th>
@@ -70,6 +70,12 @@
 
 
       </table><br><br>
-
+      <!-- <p id="demo"></p> -->
+      <button class="btn" id="btn" type="button">Apply</button>
+<script type="text/javascript">
+  function btn_click(){
+    document.getElementById("btn").style.visibility = "visible";
+  }
+</script>
   </body>
 </html>

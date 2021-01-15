@@ -331,3 +331,25 @@ input.hidden {
       transform: translate(-50%, -50%);
       color: white;
     }
+
+    .btn {
+      color: #fff;
+      background-color: #dc3545;
+      border-color: #dc3545;
+      float: left;
+        margin-left: 2.5%;
+        padding: 8px 30px;
+        font-size: 15px;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        visibility: hidden;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+      color: #fff;
+      background-color: #c82333;
+      border-color: #bd2130;
+
+    }
