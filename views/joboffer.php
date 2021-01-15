@@ -2,8 +2,8 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" href="../assets/css/style.css"></title>
+    <title>Job Offers</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
 
   </head>
   <body>
@@ -22,52 +22,53 @@
       <!-- navbar end-->
 
 
-      <h2>Offering Job </h2>
-      <table class="job" >
+      <h1 align = "center">Offering Job </h1>
+      <table align = "center" class="job" >
       <thead >
-          <tr class="" >
-              <th class="">Student Name</th>
-              <th class="">Student Age</th>
-              <th class="">Gender</th>
-              <th class="">address Details</th>
-              <th class="">Category</th>
-              <th class="">Class</th>
+          <tr >
+              <th >Student Name</th>
+              <th >Student Age</th>
+              <th >Gender</th>
+              <th >Address Details</th>
+              <th >Category</th>
+              <th >Class</th>
           </tr>
 
       </thead>
       <tbody >
-          <tr class="" >
-             <td class="">Ahnaf Ahmad</td>
-             <td class="">26</td>
-             <td class="">Male</td>
-             <td class="">32,33 North Bashabo</td>
-             <td class="">Bangla Medium</td>
-             <td class="">intermediate 2nd</td>
+          <tr >
+             <td >Ahnaf Ahmad</td>
+             <td >26</td>
+             <td >Male</td>
+             <td >32,33 North Bashabo</td>
+             <td >Bangla Medium</td>
+             <td class="job-class">intermediate 2nd</td>
           </tr>
 
-      </tbody>
+      </tbody><br>
 
-
-      <thead >
-          <tr class="" >
-              <th class="">Subject</th>
-              <th class="">Name Of The Institution</th>
-              <th class="">tutoring Time</th>
-              <th class="">Days/Week</th>
-              <th class="">Salary</th>
+      <thead>
+          <tr >
+              <th>Subject</th>
+              <th >Name Of The Institution</th>
+              <th >Tutoring Time</th>
+              <th >Days/Week</th>
+              <th >Salary</th>
           </tr>
+            </thead>
+
           <tbody >
-              <tr class="" >
-                 <td class="">Bangla</td>
-                 <td class="">Dhaka City College</td>
-                 <td class="">7pm - 8pm</td>
-                 <td class="">3days/week</td>
-                 <td class="">5000</td>
+              <tr >
+                 <td >Bangla</td>
+                 <td >Dhaka City College</td>
+                 <td >7pm - 8pm</td>
+                 <td >3days/week</td>
+                 <td >5000</td>
               </tr>
 
           </tbody>
 
-      </thead>
+
       </table><br><br>
 
   </body>

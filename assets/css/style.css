@@ -11,10 +11,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #eeeeee;
 }
-.h2 {
-  color: black;
 
-}
 .topnav {
   overflow: hidden;
   background-color: #393e46;
@@ -56,13 +53,13 @@ h1{
   color: #39311d;
 }
 p{
-  ont-size: 14.1px;
-    color: #fff;
-    line-height: 2.2;
-    font-weight: 500;
-    margin-top: 0;
-    margin-bottom: 1rem;
-    display: block;
+        font-size: 14.1px;
+        color: #fff;
+        line-height: 2.2;
+        font-weight: 500;
+        margin-top: 0;
+        margin-bottom: 1rem;
+        display: block;
         margin-block-start: 1em;
         margin-block-end: 1em;
         margin-inline-start: 0px;
@@ -269,6 +266,68 @@ input.hidden {
         /* job offer */
 
 .job{
-    width:100%;
+    width:95%;
     background-color: #ddd;
+    border-top: solid 5px;
+    border-color: #ddd;
         }
+.job th{
+  border-bottom: #ddd solid 10px;
+    border-right: #ddd solid 5px;
+    padding: 10px 10px 10px 10px;
+    font-size: 20px;
+    text-align: left;
+}
+.job tr{
+
+  border: solid 5px;
+  border-color: #ddd;
+
+        }
+
+  .job td{
+    width:16.67%;
+    text-align: center;
+    border-right: #ddd solid 5px;
+    color:#000000;
+    font-size: 20px;
+    border-bottom: #ddd solid 30px;
+    padding-top: 0px;
+    text-align: left;
+    padding: 0px 0px 0px 10px;
+        }
+  table{
+  border-radius: 10px ;
+
+}
+
+
+.job-class{
+  margin-bottom:0;
+}
+
+      /* homepage Design */
+
+      .hero-image {
+      /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("photographer.jpg");
+
+      /* Set a specific height */
+      height: 50%;
+
+      /* Position and center the image to scale nicely on all screens */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+    }
+
+    /* Place text in the middle of the image */
+    .hero-text {
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+    }
