@@ -33,3 +33,6 @@ v2.3:
 
 v2.4
 	//Job offer done -Ahnaf 
+	
+v2.5
+	//job offer with apply button connected with database - Sadman

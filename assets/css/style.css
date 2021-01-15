@@ -343,7 +343,7 @@ input.hidden {
         outline: none;
         border: none;
         border-radius: 5px;
-        visibility: hidden;
+        /* visibility: hidden; */
         cursor: pointer;
     }
 

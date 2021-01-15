@@ -50,7 +50,7 @@ dictum. <br>Ut ac ligula sapien. Suspendisse cursus faucibus finibus.</p> -->
                        <input name="password" type="password" placeholder="Password">
                      </div>
                      <div  class="input-holder">
-                       <a class="link" href="">Dont have account?</a>
+                       <a class="link" href="../views/registration.php">Dont have account?</a>
                        <input class="login-button" name="submit" type="submit" value="Log In">
                      </div>
                  </form>

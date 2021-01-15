@@ -59,15 +59,15 @@ if(!isset($_SESSION["id"])){
     </div>
 
     <div class="input">
-    <input type="text" name="saddress" placeholder="Address Details">
+    <input type="text" name="saddress" placeholder="Adss Details">
     </div>
 
         <div class="input">
           <select  id="dr1" onchange = "insertOptions('dr1','dr2')" name="smedium">
-          <option  name ="catagory" value="catagory"> Category</option>
-          <option  name="englishMedium" value="englishMedium" >English Medium</option>
-          <option  name="banglaMedium" value="banglaMedium" >Bangla Medium</option>
-          <option  name="englishVersion" value="englishVersion">English Version</option>
+          <option name ="catagory" value="catagory"> Meidum</option>
+          <option value="English Medium" >English Medium</option>
+          <option value="Bangla Medium" >Bangla Medium</option>
+          <option value="English Version">English Version</option>
         </select>
 
         </div>
@@ -94,14 +94,14 @@ if(!isset($_SESSION["id"])){
 
         <div class="input-right-days">
         <select name="days" >
-        <option > Days/Week</option>
-        <option  >1 days/week</option>
-        <option  >2 days/week</option>
-        <option  >3 days/week</option>
-        <option  >4 days/week</option>
-        <option  >5 days/week</option>
-        <option  >6 days/week</option>
-        <option  >7 days/week</option>
+        <option> Days/Week</option>
+        <option>1 days/week</option>
+        <option>2 days/week</option>
+        <option>3 days/week</option>
+        <option>4 days/week</option>
+        <option>5 days/week</option>
+        <option>6 days/week</option>
+        <option>7 days/week</option>
       </select>
     </div>
 
