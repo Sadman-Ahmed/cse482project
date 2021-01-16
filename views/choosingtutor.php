@@ -24,78 +24,104 @@
 
 
       <h1 align = "center">Tution Details </h1>
-      <table align = "center" class="job" >
-      <thead >
-          <tr >
-              <th >Student Name</th>
-              <th >Student Age</th>
-              <th >Gender</th>
-              <th >Address Details</th>
-              <th >Category</th>
-              <th >Class</th>
-          </tr>
+      <?php
+      include_once("../models/database.php");
+      include_once("../models/error.php");
+      session_start();
+      $id = $_SESSION["id"];
+      $sql = "SELECT * FROM post Where uid = '$id' and done = 0";
+      $result = mysqli_query($conn, $sql);
 
-      </thead>
-      <tbody >
-          <tr >
-             <td >Ahnaf Ahmad</td>
-             <td >26</td>
-             <td >Male</td>
-             <td >32,33 North Bashabo</td>
-             <td >Bangla Medium</td>
-             <td class="job-class">intermediate 2nd</td>
-          </tr>
+      if (mysqli_num_rows($result) > 0){
+        while($row = mysqli_fetch_assoc($result)){
+          echo '<table align = "center" class="job">';
+          echo '<thead >';
+              echo '<tr >';
+                  echo '<th >Student Name</th>';
+                  echo '<th >Student Age</th>';
+                  echo '<th >Gender</th>';
+                  echo '<th >Address Details</th>';
+                  echo '<th >Category</th>';
+                  echo '<th >Class</th>';
+            echo '</tr>';
 
-      </tbody><br>
+          echo '</thead>';
+          echo '<tbody >';
+              echo '<tr >';
+                 echo '<td >'.$row['sname'].'</td>';
+                 echo '<td >'.$row['sage'].'</td>';
+                 echo '<td >'.$row['gender'].'</td>';
+                 echo '<td >'.$row['address'].'</td>';
+                 echo '<td >'.$row['medium'].'</td>';
+                 echo '<td class="job-class">'.$row['class'].'</td>';
+            echo '</tr>' ;
+        echo '</tbody><br>' ;
 
-      <thead>
-          <tr >
-              <th>Subject</th>
-              <th >Name Of The Institution</th>
-              <th >Tutoring Time</th>
-              <th >Days/Week</th>
-              <th >Salary</th>
-          </tr>
-            </thead>
+          echo '<thead>';
+              echo '<tr >';
+                  echo '<th>Subject</th>';
+                  echo '<th >Name Of The Institution</th>' ;
+                  echo '<th >Tutoring Time</th>';
+                  echo '<th >Days/Week</th>' ;
+                  echo '<th >Salary</th>' ;
+            echo '</tr>';
+              echo '</thead>' ;
 
-          <tbody >
-              <tr >
-                 <td >Bangla</td>
-                 <td >Dhaka City College</td>
-                 <td >7pm - 8pm</td>
-                 <td >3days/week</td>
-                 <td >5000</td>
-              </tr>
+            echo '<tbody >' ;
+                  echo '<tr >';
+                     echo '<td >'.$row['subject'].'</td>';
+                     echo '<td >'.$row['institution'].'</td>';
+                     echo '<td >'.$row['time'].'</td>';
+                     echo '<td >'.$row['days'].'</td>';
+                     echo '<td >'.$row['salary'].'</td>';
+                  echo '</tr>';
+              echo '</tbody>';
+          echo '</table>';
 
-          </tbody>
+          $pid = $row['id'];
+          $sql = "SELECT * FROM post ps, apply ap,users us where ps.id= '$pid' and ap.pid=ps.id and ap.uid=us.id;";
+          $applicant = mysqli_query($conn, $sql);
 
-      </table><br><br>
+          while($count = mysqli_fetch_assoc($applicant)){
+            echo '<table align = "center" class="choose" >';
+            echo '<thead >';
+                echo '<tr >';
+                    echo '<th >Tutor Name</th>';
+                    echo '<th >Name Of The Institution</th>';
+                    echo '<th >Address Details</th>';
+                    echo '<th >Contact Number</th>';
 
+                echo '</tr>';
 
-        <h1 align = "center"> Choose Your Tutor </h1>
-    <table align = "center" class="choose" >
-        <thead >
-            <tr >
-                <th >Tutor Name</th>
-                <th >Name Of The Institution</th>
-                <th >Address Details</th>
-                <th >Contact Number</th>
-              
-            </tr>
+            echo '</thead>';
+            echo '<tbody >';
+                echo '<tr >';
+                   echo '<td >
+                   '.$count['firstname'].'
+                   '.$count['lastname'].'
+                   </td>';
+                   echo '<td >'.$count['university'].'</td>';
+                   echo '<td >'.$count['address'].'</td>';
+                   echo '<td >'.$count['contact'].'</td>';
+                   echo '<td><button class = "btn contact" type= "submit" onclick=confirm('.$pid.','.$count['id'].')>Confirm</button></td>';
 
-        </thead>
-        <tbody >
-            <tr >
-               <td >Ahnaf Ahmad</td>
-               <td >North south University</td>
-               <td >32,33 North Bashabo</td>
-               <td >01521428605</td>
-               <td><input class= "contact" type="submit" value="Confirm"></td>
-            </tr>
+                echo '</tr>';
 
-        </tbody><br>
+            echo '</tbody><br>';
+          echo '</table>';
+          }
 
-      </table>
+        }
 
+      }
+      else {
+	       echo "0 results";
+      }
+     ?>
   </body>
+  <script>
+    function confirm(id,uid){
+      window.location.href = "../models/confirm.php?id="+id+"&uid="+uid;
+    }
+  </script>
 </html>

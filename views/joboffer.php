@@ -6,6 +6,9 @@ session_start();
 if(!isset($_SESSION["id"])){
   header("Location: ../views/login.php");
 }
+if(($_SESSION["role"]=='guardian')){
+  header("Location: ../views/login.php");
+}
  ?>
 <html lang="en" dir="ltr">
   <head>

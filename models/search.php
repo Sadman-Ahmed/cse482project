@@ -5,7 +5,8 @@ function conectionEnd($value){
 function fetch($value=’’){
   include_once("../models/database.php");
 
-  $sql = "SELECT * FROM post WHERE subject LIKE '%".$value."%'";
+  $sql = "SELECT * FROM post p where p.id not in (SELECT po.id FROM apply ap, post po WHERE ap.uid = 6 AND ap.pid = po.id AND po.done = 0) and p.done=0 AND subject LIKE '%".$value."%'";
+
   $result = mysqli_query($conn, $sql);
 
   if($result) {

@@ -37,6 +37,7 @@
           $Dpassword = $row['password'];
           $Drole = $row['role'];
           $_SESSION["id"] = $row['id'];
+          $_SESSION["role"] = $row['role'];
           //matching info
           if(($email == $Demail) && ($password == $Dpassword)){
             //selecting role
