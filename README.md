@@ -39,3 +39,6 @@ v2.6
 	//homepage (primary) - Ahnaf 
 	//tab view on registration page - Ahnaf
 
+v3.2
+	//homepage with final css - Ahnaf
+
