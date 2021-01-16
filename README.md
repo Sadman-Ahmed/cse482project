@@ -49,3 +49,6 @@ v3.0
 	//job offer is now only applicable to tutors - Sadman
 	//tutor cannot apply twice in a post  - Sadman
 	//guardians can confirm tutors - Sadman
+	
+v3.1 
+	//applied jobs done - sadman
