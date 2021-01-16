@@ -12,6 +12,8 @@ body {
   background-color: #eeeeee;
 }
 
+  /* nav bar style */
+
 .topnav {
   overflow: hidden;
   background-color: #393e46;
@@ -66,6 +68,8 @@ p{
         margin-inline-end: 0px;
 
 }
+
+    /* registration & login style */
 
 input[type=text], input[type=password], input[type=number], input[type=email],input[type=tel] ,input[type=date],  textarea {
   /* width: 100%;
@@ -230,8 +234,47 @@ border-radius: 5px;
 margin-right: 490px;
 }
 
+        /* tab bar style */
 
-/* Guardian-profile */
+    .tab {
+      overflow: hidden;
+      /* border: 1px solid #ccc; */
+      background-color: #393e46;
+      width: 500px;
+      align-content: center;
+
+    }
+
+    .tab button {
+      /* background-color: #393e46; */
+      background-color: inherit;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      font-size: 17px;
+      color: #f2f2f2
+    }
+
+    .tab button:hover {
+      background-color: #ffd369;
+      color: black;
+    }
+
+    /* Create an active/current tablink class */
+    .tab button.active {
+      background-color: #ccc;
+    }
+
+    .tabcontent {
+      display: none;
+      padding: 6px 12px;
+      border: 1px solid #ccc;
+      border-top: none;
+    }
+
+
+      /* Guardian-profile style*/
 
 .profile-pic{
     float: left;
@@ -263,7 +306,7 @@ input.hidden {
   }
 
 
-        /* job offer */
+        /* job offer style*/
 
 .job{
     width:95%;
@@ -331,3 +374,66 @@ input.hidden {
       transform: translate(-50%, -50%);
       color: white;
     }
+
+    /* choosing tutor style */
+
+    .choose{
+        width:95%;
+        background-color: #ddd;
+        border-top: solid 5px;
+        border-color: #ddd;
+            }
+    .choose th{
+      border-bottom: #ddd solid 10px;
+        border-right: #ddd solid 5px;
+        padding: 10px 10px 10px 10px;
+        font-size: 20px;
+        text-align: left;
+    }
+    .choose tr{
+
+      border: solid 5px;
+      border-color: #ddd;
+
+            }
+
+      .choose td{
+        width:26%;
+        text-align: center;
+        border-right: #ddd solid 5px;
+        color:#000000;
+        font-size: 20px;
+        border-bottom: #ddd solid 30px;
+        padding-top: 0px;
+        text-align: left;
+        padding: 0px 0px 0px 10px;
+            }
+      table{
+      border-radius: 10px ;
+
+    }
+
+
+    .choose-class{
+      margin-bottom:0;
+    }
+
+.contact{
+    float: right;
+    width: 100%;
+    /* padding: 20px 70px; */
+    height: 60px;
+    width: 220px;
+    border: none;
+    background-color: #393e46;
+    color: #f2f2f2;
+    font-size: 25px;
+    text-align: center;
+    font-family: Lobster;
+    border-radius: 5px;
+
+  }
+.comments{
+  float: right;
+  margin-right: 50px;
+}

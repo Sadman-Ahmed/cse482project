@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Job Offers</title>
+    <title>Choosing Tutors</title>
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="icon" href="../assets/img/favicon.ico">
 
@@ -23,7 +23,7 @@
       <!-- navbar end-->
 
 
-      <h1 align = "center">Offering Job </h1>
+      <h1 align = "center">Tution Details </h1>
       <table align = "center" class="job" >
       <thead >
           <tr >
@@ -69,8 +69,33 @@
 
           </tbody>
 
-
       </table><br><br>
+
+
+        <h1 align = "center"> Choose Your Tutor </h1>
+    <table align = "center" class="choose" >
+        <thead >
+            <tr >
+                <th >Tutor Name</th>
+                <th >Name Of The Institution</th>
+                <th >Address Details</th>
+                <th >Contact Number</th>
+              
+            </tr>
+
+        </thead>
+        <tbody >
+            <tr >
+               <td >Ahnaf Ahmad</td>
+               <td >North south University</td>
+               <td >32,33 North Bashabo</td>
+               <td >01521428605</td>
+               <td><input class= "contact" type="submit" value="Confirm"></td>
+            </tr>
+
+        </tbody><br>
+
+      </table>
 
   </body>
 </html>

@@ -33,3 +33,9 @@ v2.3:
 
 v2.4
 	//Job offer done -Ahnaf 
+
+v2.6
+	//choosingtutor -Ahnaf
+	//homepage (primary) - Ahnaf 
+	//tab view on registration page - Ahnaf
+

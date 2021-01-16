@@ -8,6 +8,7 @@
     <meta charset="utf-8">
     <title>Login Page</title>
       <link rel="stylesheet" href="../assets/css/style.css">
+      <link rel="icon" href="../assets/img/favicon.ico">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   </head>
   <body>
