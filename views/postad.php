@@ -12,6 +12,7 @@ if(!isset($_SESSION["id"])){
     <meta charset="utf-8">
     <title>Guardian Login</title>
         <link rel="stylesheet" href="../assets/css/style.css">
+        <link rel="icon" href="../assets/img/favicon.ico">
   </head>
   <body>
 

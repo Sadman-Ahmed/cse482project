@@ -10,8 +10,9 @@ if(!isset($_SESSION["id"])){
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" href="../assets/css/style.css"></title>
+    <title>Job Offers</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="icon" href="../assets/img/favicon.ico">
 
     <script>
     function usersearchTxt(str){

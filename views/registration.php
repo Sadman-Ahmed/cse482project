@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Registration Page</title>
         <link rel="stylesheet" href="../assets/css/style.css">
+        <link rel="icon" href="../assets/img/favicon.ico">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@1,600&display=swap" rel="stylesheet">
   </head>
@@ -34,7 +35,26 @@
     <h1 align="center" > Create Your Account</h1>
 
     <!-- registration form start -->
+
+    <div align= "center" class="tab">
+    <button class="tablinks" onclick="openCity(event, 'London')">Guardian</button>
+    <button class="tablinks" onclick="openCity(event, 'Paris')">Tutor</button>
+    </div>
+
+    <div id="Guardian" class="tabcontent">
+    <h3>Guardian</h3>
+    <p>London is the capital city of England.</p>
+    </div>
+
+    <div id="Tutor" class="tabcontent">
+    <h3>Tutor</h3>
+    <p>Paris is the capital of France.</p>
+    </div>
+
     <form action="../models/register.php" method="POST">
+
+
+
         <div align="center" class="input-holder">
           <input name="firstname" type="text" placeholder="First Name">
         </div>
@@ -53,13 +73,11 @@
         <div align="center" class="input-holder">
           <input name="conpassword" type="password" placeholder="Confirm Password">
         </div>
+
         <div align="center" class="input-holder">
-          <select name="role">
-            <option> Are You a Guardian or Tutor</option>
-            <option value="guardian">Guardian</option>
-            <option value="tutor">Tutor</option>
-          </select>
+          <input name="" type="text" placeholder="Name of Your Institution">
         </div>
+
         <div align="center" class="input-holder">
           <input name="address" type="text" placeholder="Parmanent Address">
         </div>
