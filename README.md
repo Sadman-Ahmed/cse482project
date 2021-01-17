@@ -44,6 +44,7 @@ v2.6
 	//homepage (primary) - Ahnaf
 	//tab view on registration page - Ahnaf
 
+
 v3.0
 	//major changes in registration form - Sadman
 	//job offer is now only applicable to tutors - Sadman
@@ -55,3 +56,10 @@ v3.1
 	
 v3.1.1
 	//minor css fixed - sadman
+
+v3.2
+	//homepage with final css - Ahnaf
+	
+v3.4 
+	//final merge with Ahnaf
+
