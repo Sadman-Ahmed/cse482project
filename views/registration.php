@@ -42,93 +42,175 @@
     </div>
 
     <div id="Guardian" class="tabcontent">
-      <form action="../models/register.php" method="POST">
+      <form id="form" action="../models/register.php" method="POST">
         <input type="hidden" name="role" value="guardian">
-          <div align="center" class="input-holder">
-            <input name="firstname" type="text" placeholder="First Name">
-          </div>
-          <div align="center" class="input-holder">
-            <input type="text" name="lastname" placeholder="Last Name">
-          </div>
-          <div align="center" class="input-holder">
-            <input type="text" name="username" placeholder="Username">
-          </div>
-          <div align="center" class="input-holder">
-            <input name="email" type="email" placeholder="Email">
-          </div>
-          <div align="center" class="input-holder">
-            <input name="password" type="password" placeholder="Password">
-          </div>
-          <div align="center" class="input-holder">
-            <input name="conpassword" type="password" placeholder="Confirm Password">
-          </div>
+        <div align="center" class="input-holder">
+          <input name="firstname" type="text" placeholder="First Name" id="fname">
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
 
-          <div align="center" class="input-holder">
-            <input name="address" type="text" placeholder="Parmanent Address">
-          </div>
-          <div align="center" class="input-holder">
-            <input name="contact"type="tel" placeholder="Conatact Number">
-          </div>
-          <div align="center"class="input-holder">
-            <input name="dob" type="date" placeholder="Birth Day " value="" min="1900-01-01" max="2200-12-30">
-          </div>
-          <div align="center" class="input-holder">
-            <input class="terms" type="checkbox" >I have read and agree to the Terms and Conditions and Privacy Policy
-           </div>
-          <div align="center" class="input-holder">
-            <input class="button" type="submit" value="Sign Up">
-          </div>
+        <div align="center" class="input-holder">
+          <input type="text" name="lastname" placeholder="Last Name" id="lname">
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+
+        <div align="center" class="input-holder">
+          <input type="text" name="username" placeholder="Username" id="username">
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+
+        <div align="center" class="input-holder">
+          <input name="email" type="email" placeholder="Email" id="email">
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+
+        <div align="center" class="input-holder">
+          <input name="password" type="password" placeholder="Password" id="password">
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+
+        <div align="center" class="input-holder">
+          <input name="conpassword" type="password" placeholder="Confirm Password" id="password2">
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+
+        <div align="center" class="input-holder">
+          <input name="address" type="text" placeholder="Parmanent Address" id="address">
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+
+        <div align="center" class="input-holder">
+          <input name="contact"type="tel" placeholder="Conatact Number" id="contactNo">
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+
+        <div align="center"class="input-holder">
+          <input name="dob" type="date" placeholder="Birth Day " value="" min="1900-01-01" max="2200-12-30" id="date">
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+
+        <div align="center" class="input-holder">
+          <input id="terms" class="terms" type="checkbox" >I have read and agree to the Terms and Conditions and Privacy Policy
+          <br>
+          <small>Error message</small>
+         </div>
+
+        <div align="center" class="input-holder">
+          <input class="button" type="submit" value="Sign Up" >
+        </div>
           <br><br>
       </form>
     </div>
 
+
+
     <div id="Tutor" class="tabcontent">
-      <form action="../models/register.php" method="POST">
+      <form id="form2" action="../models/register.php" method="POST">
         <input type="hidden" name="role" value="tutor">
-          <div align="center" class="input-holder">
-            <input name="firstname" type="text" placeholder="First Name">
-          </div>
-          <div align="center" class="input-holder">
-            <input type="text" name="lastname" placeholder="Last Name">
-          </div>
-          <div align="center" class="input-holder">
-            <input type="text" name="username" placeholder="Username">
-          </div>
-          <div align="center" class="input-holder">
-            <input name="email" type="email" placeholder="Email">
-          </div>
-          <div align="center" class="input-holder">
-            <input name="password" type="password" placeholder="Password">
-          </div>
-          <div align="center" class="input-holder">
-            <input name="conpassword" type="password" placeholder="Confirm Password">
-          </div>
+        <div align="center" class="input-holder">
+          <input name="firstname" type="text" placeholder="First Name" id="fname2">
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
 
-          <div align="center" class="input-holder">
-            <input name="" type="text" name ="university"placeholder="Name of Your Institution">
-          </div>
+        <div align="center" class="input-holder">
+          <input type="text" name="lastname" placeholder="Last Name" id="lname2">
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
 
-          <div align="center" class="input-holder">
-            <input name="address" type="text" placeholder="Parmanent Address">
-          </div>
-          <div align="center" class="input-holder">
-            <input name="contact"type="tel" placeholder="Conatact Number">
-          </div>
-          <div align="center"class="input-holder">
-            <input name="dob" type="date" placeholder="Birth Day " value="" min="1900-01-01" max="2200-12-30">
-          </div>
-          <div align="center" class="input-holder">
-            <input class="terms" type="checkbox" >I have read and agree to the Terms and Conditions and Privacy Policy
-           </div>
-          <div align="center" class="input-holder">
-            <input class="button" type="submit" value="Sign Up">
-          </div>
+        <div align="center" class="input-holder">
+          <input type="text" name="username" placeholder="Username" id="username2">
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+
+        <div align="center" class="input-holder">
+          <input name="email" type="email" placeholder="Email" id="email2">
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+
+        <div align="center" class="input-holder">
+          <input name="password" type="password" placeholder="Password" id="password12">
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+
+        <div align="center" class="input-holder">
+          <input name="conpassword" type="password" placeholder="Confirm Password" id="password22">
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+
+        <div align="center" class="input-holder">
+          <input name="" type="text" placeholder="Name of Your Institution" id="institutionName">
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+
+        <div align="center" class="input-holder">
+          <input name="address" type="text" placeholder="Parmanent Address" id="address2">
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+
+        <div align="center" class="input-holder">
+          <input name="contact"type="tel" placeholder="Conatact Number" id="contactNo2">
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+
+        <div align="center"class="input-holder">
+          <input name="dob" type="date" placeholder="Birth Day " value="" min="1900-01-01" max="2200-12-30" id="date2">
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+
+        <div align="center" class="input-holder">
+          <input id="terms2" class="terms" type="checkbox" >I have read and agree to the Terms and Conditions and Privacy Policy
+          <br>
+          <small>Error message</small>
+         </div>
+
+        <div align="center" class="input-holder">
+          <input class="button" type="submit" value="Sign Up">
+        </div>
           <br><br>
       </form>
     </div>
     <!-- registration form end -->
   </body>
 
+<<<<<<< HEAD
   <script>
 function openCity(evt, role) {
   var i, tabcontent, tablinks;
@@ -146,5 +228,5 @@ function openCity(evt, role) {
 tabcontent = document.getElementsByClassName("tabcontent");
 tabcontent[0].style.display = "none";
 </script>
-
+<script src="../assets/js/registration.js" charset="utf-8"></script>
 </html>

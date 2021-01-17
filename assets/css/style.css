@@ -164,9 +164,60 @@ select {
 {
     color: #ffffffc4;
 }
+
 .input-holder
 {
     padding-top: 30px;
+    position: relative;
+}
+.input-holder i {
+  position: absolute;
+  top: 60%;
+  right: 36%;
+  visibility: hidden;
+}
+.input-holder small{
+  position: absolute;
+  left: 35%;
+  top: 105%;
+  visibility: hidden;
+}
+.input-holder.success input{
+  border: solid #2ecc71;
+  border-width: 2px;
+}
+.input-holder.success i.fa-check-circle{
+  color: #2ecc71;
+  visibility: visible;
+}
+
+.input-holder.error input{
+  border: solid #e74c3c;
+  border-width: 2px;
+}
+.input-holder.error i.fa-exclamation-circle{
+  color: #e74c3c;
+  visibility: visible;
+}
+.input-holder.error small{
+  color: #e74c3c;
+  visibility: visible;
+}
+
+.pinput-hold{
+
+}
+
+.pinput-hold.success input{
+  border: solid #2ecc71;
+  /* border-width: 2px; */
+}
+
+
+.pinput-hold.error input{
+  border: solid #e74c3c;
+
+  /* border-width: 2px; */
 }
 
 .terms{
@@ -392,6 +443,114 @@ table {
 }
 
 .choose th {
+
+.profile-input {
+  float: right;
+  margin-top: 20px;
+  margin-right: 300px;
+}
+
+/* job offer style*/
+.job {
+  width: 95%;
+  background-color: #ddd;
+  border-top: solid 5px;
+  border-color: #ddd;
+}
+
+.job th {
+  border-bottom: #ddd solid 10px;
+  border-right: #ddd solid 5px;
+  padding: 10px 10px 10px 10px;
+  font-size: 20px;
+  text-align: left;
+}
+
+
+.choose tr {
+  border: solid 5px;
+  border-color: #ddd;
+}
+
+
+.job tr {
+  border: solid 5px;
+  border-color: #ddd;
+}
+
+.job td {
+  width: 16.67%;
+  text-align: center;
+  border-right: #ddd solid 5px;
+  color: #000000;
+  font-size: 20px;
+  border-bottom: #ddd solid 30px;
+  padding-top: 0px;
+  text-align: left;
+  padding: 0px 0px 0px 10px;
+}
+
+table {
+  border-radius: 10px;
+}
+
+.job-class {
+  margin-bottom: 0;
+}
+
+/* homepage Design */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("photographer.jpg");
+  /* Set a specific height */
+  height: 50%;
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.btn {
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;
+  float: left;
+  margin-left: 2.5%;
+  padding: 8px 30px;
+  font-size: 15px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  /* visibility: hidden; */
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: #c82333;
+  border-color: #bd2130;
+}
+
+/* choosing tutor style */
+.choose {
+  width: 95%;
+  background-color: #ddd;
+  border-top: solid 5px;
+  border-color: #ddd;
+}
+
+.choose th {
   border-bottom: #ddd solid 10px;
   border-right: #ddd solid 5px;
   padding: 10px 10px 10px 10px;
@@ -442,8 +601,4 @@ table {
 .comments {
   float: right;
   margin-right: 50px;
-}
-
-.class{
-  width: 50%;
 }

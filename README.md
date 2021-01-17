@@ -32,7 +32,7 @@ v2.3:
 	//post ad done -Sadman
 
 v2.4
-	//Job offer done -Ahnaf 
+	//Job offer done -Ahnaf
 
 
 v2.5
@@ -50,16 +50,21 @@ v3.0
 	//job offer is now only applicable to tutors - Sadman
 	//tutor cannot apply twice in a post  - Sadman
 	//guardians can confirm tutors - Sadman
-	
-v3.1 
+
+v3.1
 	//applied jobs done - sadman
-	
+
 v3.1.1
 	//minor css fixed - sadman
 
 v3.2
 	//homepage with final css - Ahnaf
-	
-v3.4 
+
+v3.3
+	//all validations done - Shourav
+
+v3.4
 	//final merge with Ahnaf
 
+v3.5
+	//final merge with shourav
