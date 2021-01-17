@@ -14,10 +14,11 @@
   $address = $_POST['address'];
   $contact = $_POST['contact'];
   $dob = $_POST['dob'];
+  $university = isset($_POST['university'])? $_POST['university']:"";
 
     //sending the data to the database through sql query
-  $sql = "INSERT INTO `users`(`firstname`, `lastname`, `username`, `email`, `password`, `role`, `address`, `contact`, `dob`)
-    VALUES ('$firstname','$lastname','$username','$email','$password','$role','$address','$contact','$dob')";
+  $sql = "INSERT INTO `users`(`firstname`, `lastname`, `username`, `email`, `password`, `role`, `address`, `contact`, `dob`,`university`)
+    VALUES ('$firstname','$lastname','$username','$email','$password','$role','$address','$contact','$dob','$university')";
 
   if (mysqli_query($conn, $sql)) {
     echo "New record created successfully";

@@ -8,6 +8,7 @@
     <meta charset="utf-8">
     <title>Login Page</title>
       <link rel="stylesheet" href="../assets/css/style.css">
+      <link rel="icon" href="../assets/img/favicon.ico">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   </head>
   <body>
@@ -50,7 +51,7 @@ dictum. <br>Ut ac ligula sapien. Suspendisse cursus faucibus finibus.</p> -->
                        <input name="password" type="password" placeholder="Password">
                      </div>
                      <div  class="input-holder">
-                       <a class="link" href="">Dont have account?</a>
+                       <a class="link" href="../views/registration.php">Dont have account?</a>
                        <input class="login-button" name="submit" type="submit" value="Log In">
                      </div>
                  </form>

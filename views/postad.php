@@ -1,17 +1,10 @@
 <!DOCTYPE html>
-<?php
-include_once("../models/error.php");
-session_start();
-
-if(!isset($_SESSION["id"])){
-  header("Location: ../views/login.php");
-}
- ?>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>Guardian Login</title>
         <link rel="stylesheet" href="../assets/css/style.css">
+        <script src="https://kit.fontawesome.com/e0abba498c.js" crossorigin="anonymous"></script>
   </head>
   <body>
 
@@ -28,42 +21,35 @@ if(!isset($_SESSION["id"])){
 
       <!-- navbar end-->
 
-      <div>
-        <?php
-          if (isset($_GET['success'])) {
-            if($_GET['success'] == 'valid_post'){
-               echo "<h2 align='center'>successfull</h2>";
-             }
-          }
-         ?>
-      </div>
-
     <h1 align="center" > Request For Tutor</h1>
 
     <!-- Input Group starts -->
-    <form action="../models/postad.php" method="POST">
-        <div align="center" class="input-left">
-        <input  type="text" name="sname"placeholder="Student Name">
+    <form id="postForm">
+        <div align="center" class="input-holder">
+        <input  type="text" placeholder="Student Name" id="name">
         </div>
 
-        <div align="center" class="input-right">
-        <input type="tel" name="sage" placeholder="Student Age">
+        <div align="center" class="input-holder">
+        <input type="tel" placeholder="Student Age" id="age">
+
       </div><br>
 
-      <div class="input">
-      <select name="sgender">
-        <option> Gender</option>
-        <option value="male" >Male</option>
-        <option value="female" >Female</option>
+      <div align="center" class=" input-holder">
+      <select id="gender">
+        <option > Gender</option>
+        <option  >Male</option>
+        <option  >Female</option>
       </select>
+
     </div>
 
-    <div class="input">
-    <input type="text" name="saddress" placeholder="Address Details">
+    <div align="center" class=" input-holder">
+    <input type="text" placeholder="Address Details" id="address">
+
     </div>
 
-        <div class="input">
-          <select  id="dr1" onchange = "insertOptions('dr1','dr2')" name="smedium">
+        <div align="center" class="input-holder">
+          <select  id="dr1" onchange = "insertOptions()">
           <option  name ="catagory" value="catagory"> Category</option>
           <option  name="englishMedium" value="englishMedium" >English Medium</option>
           <option  name="banglaMedium" value="banglaMedium" >Bangla Medium</option>
@@ -72,28 +58,31 @@ if(!isset($_SESSION["id"])){
 
         </div>
 
-        <div class="input-left">
-          <select  id="dr2" onchange="insertSubjects('dr2','dr3')" name="sclass">
+        <div align="center" class=" input-holder">
+          <select  id="dr2" onchange="insertSubjects()">
             <option name="class_no" value="class_no">Class</option>
           </select>
+
         </div>
 
-      <div class="input-right">
-        <select id="dr3" name="subject">
+      <div align="center" class="input-holder">
+        <select id="dr3">
         <option name="subject" value="subject"  > Choose Subject</option>
       </select>
+
       </div>
 
 
-        <div class="input">
-        <input type="text" name="institution"placeholder="Name Of Institution">
+        <div align="center" class=" input-holder">
+        <input type="text" placeholder="Name Of Institution" id="institutionName">
+
         </div>
-        <div class="input-left">
-        <input  type="tel" name="time" placeholder="Tutoring Time">
+        <div align="center" class=" input-holder">
+        <input  type="tel" placeholder="Tutoring Time" id="tutoringTime">
         </div><br>
 
-        <div class="input-right-days">
-        <select name="days" >
+        <div align="center" class=" input-holder">
+        <select id="week">
         <option > Days/Week</option>
         <option  >1 days/week</option>
         <option  >2 days/week</option>
@@ -103,10 +92,11 @@ if(!isset($_SESSION["id"])){
         <option  >6 days/week</option>
         <option  >7 days/week</option>
       </select>
+
     </div>
 
-        <div class="input">
-        <input type="number"  name="salary" placeholder="Salary">
+        <div align="center" class=" input-holder">
+        <input type="number" placeholder="Salary" id="salary">
         </div>
 
 
@@ -119,5 +109,6 @@ if(!isset($_SESSION["id"])){
 
     <!-- Input Group ends -->
     <script src="../assets/js/posted.js" charset="utf-8"></script>
+    <script src="../assets/js/postedValidation.js" charset="utf-8"></script>
   </body>
 </html>
