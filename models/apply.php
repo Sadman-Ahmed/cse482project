@@ -18,6 +18,6 @@ $sql = "INSERT INTO `apply`(`pid`, `uid`)
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
   }
     //redirecting to the registration page
-  //header("Location: ../views/postad.php?success=valid_post");
+  header("Location: ../views/joboffer.php");
 
  ?>

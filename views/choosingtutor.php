@@ -11,11 +11,10 @@
 
     <!-- navbar start-->
     <div class="topnav">
-      <a class="tutorhub" href="#">Tutorhub.com</a>
-      <a class="nav"href="#news">News</a>
-      <a class="nav"href="#contact">Contact</a>
-      <a class="nav"href="#about">About</a>
-      <a class="nav"href="#home">Home</a>
+      <a class="tutorhub" href="../views/index.php">Tutorhub.com</a>
+      <a class="nav"href="../models/logout.php">Logout</a>
+      <a class="nav"href="../views/postad.php">Post an Job</a>
+
     </div>
 
     <br><br><br>
@@ -115,7 +114,8 @@
 
       }
       else {
-	       echo "0 results";
+        echo'<br><br><br>';
+	      echo'<h1 align="center">You have not posted any jobs yet</h1>';
       }
      ?>
   </body>

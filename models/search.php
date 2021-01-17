@@ -5,7 +5,8 @@ function conectionEnd($value){
 function fetch($value=’’){
   include_once("../models/database.php");
 
-  $sql = "SELECT * FROM post p where p.id not in (SELECT po.id FROM apply ap, post po WHERE ap.uid = 6 AND ap.pid = po.id AND po.done = 0) and p.done=0 AND subject LIKE '%".$value."%'";
+$id = $_SESSION["id"];
+  $sql = "SELECT * FROM post p where p.id not in (SELECT po.id FROM apply ap, post po WHERE ap.uid = '$id' AND ap.pid = po.id AND po.done = 0) and p.done=0 AND subject LIKE '%".$value."%'";
 
   $result = mysqli_query($conn, $sql);
 
@@ -65,10 +66,11 @@ function fetch($value=’’){
 
   }
   else {
-    echo "Error :".$sql."<br>".mysqli_error($conn);  }
+    echo "Error :".$sql."<br>".mysqli_error($conn);
+  }
     conectionEnd($conn);
-  }
-  if (isset($_GET['search'])) {
+}
+if (isset($_GET['search'])) {
     fetch($_GET['search']);
-  }
+}
  ?>

@@ -11,11 +11,8 @@
 
     <!-- navbar start-->
     <div class="topnav">
-      <a class="tutorhub" href="#">Tutorhub.com</a>
-      <a class="nav"href="#news">News</a>
-      <a class="nav"href="#contact">Contact</a>
-      <a class="nav"href="#about">About</a>
-      <a class="nav"href="#home">Home</a>
+      <a class="tutorhub" href="../views/index.php">Tutorhub.com</a>
+      <a class="nav"href="../views/login.php">Log IN</a>
     </div>
 
     <!-- <br><br><br> -->

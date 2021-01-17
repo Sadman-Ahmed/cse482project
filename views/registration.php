@@ -12,11 +12,8 @@
 
     <!-- navbar start-->
     <div class="topnav">
-      <a class="tutorhub" href="#">Tutorhub.com</a>
-      <a class="nav"href="#news">News</a>
-      <a class="nav"href="#contact">Contact</a>
-      <a class="nav"href="#about">About</a>
-      <a class="nav"href="#home">Home</a>
+      <a class="tutorhub" href="../views/index.php">Tutorhub.com</a>
+      <a class="nav"href="../views/login.php">Log IN</a>
     </div>
 
     <br><br><br>
@@ -168,7 +165,7 @@
         </div>
 
         <div align="center" class="input-holder">
-          <input name="" type="text" placeholder="Name of Your Institution" id="institutionName">
+          <input type="text" name="university" placeholder="Name of Your Institution" id="institutionName">
           <i class="fas fa-check-circle"></i>
           <i class="fas fa-exclamation-circle"></i>
           <small>Error message</small>
@@ -210,7 +207,6 @@
     <!-- registration form end -->
   </body>
 
-<<<<<<< HEAD
   <script>
 function openCity(evt, role) {
   var i, tabcontent, tablinks;
@@ -226,7 +222,7 @@ function openCity(evt, role) {
   evt.currentTarget.className += " active";
 }
 tabcontent = document.getElementsByClassName("tabcontent");
-tabcontent[0].style.display = "none";
+tabcontent[1].style.display = "none";
 </script>
 <script src="../assets/js/registration.js" charset="utf-8"></script>
 </html>

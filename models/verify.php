@@ -42,10 +42,10 @@
           if(($email == $Demail) && ($password == $Dpassword)){
             //selecting role
             if($Drole == 'guardian'){
-              header('location: ../views/guardian.php');
+              header('location: ../views/choosingtutor.php');
             }
             else if($Drole == 'tutor'){
-              header('location: ../views/tutor.php');
+              header('location: ../views/applied.php');
             }
             else{
               header('location: ../views/dashboard.php');

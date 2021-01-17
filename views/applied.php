@@ -22,12 +22,11 @@ if(($_SESSION["role"]=='guardian')){
 
     <!-- navbar start-->
     <div class="topnav">
-      <a class="tutorhub" href="#">Tutorhub.com</a>
-      <a class="nav"href="#news">News</a>
-      <a class="nav"href="#contact">Contact</a>
-      <a class="nav"href="#about">About</a>
-      <a class="nav"href="#home">Home</a>
+      <a class="tutorhub" href="../views/index.php">Tutorhub.com</a>
+      <a class="nav"href="../models/logout.php">Logout</a>
+      <a class="nav"href="../views/joboffer.php">Look For a Job</a>
     </div>
+
 
     <h1 align="center">Applied Jobs</h1>
 

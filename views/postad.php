@@ -12,11 +12,10 @@
 
     <!-- navbar start-->
     <div class="topnav">
-      <a class="tutorhub" href="#">Tutorhub.com</a>
-      <a class="nav"href="#news">News</a>
-      <a class="nav"href="#contact">Contact</a>
-      <a class="nav"href="#about">About</a>
-      <a class="nav"href="#home">Home</a>
+      <a class="tutorhub" href="../views/index.php">Tutorhub.com</a>
+      <a class="nav"href="../models/logout.php">Logout</a>
+      <a class="nav"href="../views/choosingtutor.php">DashBoard</a>
+
     </div>
 
     <br><br><br>
@@ -26,18 +25,18 @@
     <h1 align="center" > Request For Tutor</h1>
 
     <!-- Input Group starts -->
-    <form id="postForm">
+    <form id="postForm" action="../models/postad.php" method="post">
         <div align="center" class="input-holder">
-        <input  type="text" placeholder="Student Name" id="name">
+        <input  type="text" placeholder="Student Name" id="name" name="sname">
         </div>
 
         <div align="center" class="input-holder">
-        <input type="tel" placeholder="Student Age" id="age">
+        <input type="tel" placeholder="Student Age" id="age" name="sage">
 
       </div><br>
 
       <div align="center" class=" input-holder">
-      <select id="gender">
+      <select id="gender" name="sgender">
         <option > Gender</option>
         <option  >Male</option>
         <option  >Female</option>
@@ -46,13 +45,13 @@
     </div>
 
     <div align="center" class=" input-holder">
-    <input type="text" placeholder="Address Details" id="address">
+    <input type="text" placeholder="Address Details" id="address" name="saddress">
 
     </div>
 
         <div align="center" class="input-holder">
-          <select  id="dr1" onchange = "insertOptions()">
-          <option  name ="catagory" value="catagory"> Category</option>
+          <select  id="dr1" onchange = "insertOptions()" name="smedium">
+          <option  name ="catagory" value="catagory"> Medium</option>
           <option  name="englishMedium" value="englishMedium" >English Medium</option>
           <option  name="banglaMedium" value="banglaMedium" >Bangla Medium</option>
           <option  name="englishVersion" value="englishVersion">English Version</option>
@@ -61,14 +60,14 @@
         </div>
 
         <div align="center" class=" input-holder">
-          <select  id="dr2" onchange="insertSubjects()">
+          <select  id="dr2" onchange="insertSubjects()" name="sclass">
             <option name="class_no" value="class_no">Class</option>
           </select>
 
         </div>
 
-      <div align="center" class="input-holder">
-        <select id="dr3">
+      <div align="center" class="input-holder" >
+        <select id="dr3" name="subject">
         <option name="subject" value="subject"  > Choose Subject</option>
       </select>
 
@@ -76,15 +75,15 @@
 
 
         <div align="center" class=" input-holder">
-        <input type="text" placeholder="Name Of Institution" id="institutionName">
+        <input type="text" placeholder="Name Of Institution" id="institutionName" name="institution">
 
         </div>
         <div align="center" class=" input-holder">
-        <input  type="tel" placeholder="Tutoring Time" id="tutoringTime">
+        <input  type="tel" placeholder="Tutoring Time" id="tutoringTime" name="time">
         </div><br>
 
         <div align="center" class=" input-holder">
-        <select id="week" name="days">
+        <select id="week" name="days" name="days">
         <option > Days/Week</option>
         <option  >1 days/week</option>
         <option  >2 days/week</option>
@@ -98,7 +97,7 @@
     </div>
 
         <div align="center" class=" input-holder">
-        <input type="number" placeholder="Salary" id="salary">
+        <input type="number" placeholder="Salary" id="salary" name="salary">
         </div>
 
 

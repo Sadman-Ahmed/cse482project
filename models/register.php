@@ -14,7 +14,7 @@
   $address = $_POST['address'];
   $contact = $_POST['contact'];
   $dob = $_POST['dob'];
-  $university = isset($_POST['university'])? $_POST['university']:"";
+  $university = $_POST['university'];
 
     //sending the data to the database through sql query
   $sql = "INSERT INTO `users`(`firstname`, `lastname`, `username`, `email`, `password`, `role`, `address`, `contact`, `dob`,`university`)
