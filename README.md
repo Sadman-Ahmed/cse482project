@@ -52,3 +52,6 @@ v3.0
 	
 v3.1 
 	//applied jobs done - sadman
+	
+v3.1.1
+	//minor css fixed - sadman
